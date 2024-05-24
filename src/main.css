@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 22px;
+}
+#root {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.square {
+    flex: 3;
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 64px;
+    height: 64px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 64px;
+}
+.board-row {
+    
+    content: '';
+    display: table;
+}
+.play-bord-container {
+  width:200px;
+  height: 200px;
+  text-align: center;
+ 
+}
+.status {
+  text-align: center;
+ 
+}
