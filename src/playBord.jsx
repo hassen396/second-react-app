@@ -26,8 +26,18 @@ function Bord() {
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
   }
+
+  //TODO i got to fix this
+  const winner = CalculateWinner(squares);
+  let status;
+  if (winner) {
+    status = "Winner: " + winner;
+  } else {
+    status = "Next player: " + (xIsNext ? "X" : "O");
+  }
   return (
     <div className="play-bord-container">
+      <div>{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -47,8 +57,7 @@ function Bord() {
   );
 }
 
-
-export function CalculateWinner(squares) {
+function CalculateWinner(squares) {
   let lines = [
     [0, 1, 2],
     [3, 4, 5],
