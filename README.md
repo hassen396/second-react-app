@@ -5,6 +5,6 @@
 <div align='center'>
 <p>This is a two player game.</p>
 <p>player-1 starts the game by clicking on one of the nine squares.
-each player has one move.</p>
+Each player has one move.</p>
 <p>The player who first makes a row or diagonal wins the game</p>
 </div>
