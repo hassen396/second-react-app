@@ -1,6 +1,6 @@
 import { useState } from "react";
 export default Bord;
-
+import "./main.css";
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
